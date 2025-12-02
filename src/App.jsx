@@ -10,6 +10,9 @@ import SalesByAreaReport from "./pages/SalesByAreaReport";
 import TaskManager from "./pages/TaskManager";
 import VehicleAccounts from "./pages/VehicleAccounts";
 import VehicleDetails from "./pages/VehicleDetail";
+import RentList from "./pages/RentList";
+import CreditList from "./pages/CreditList";
+import CreditDetail from "./pages/CreditDetail";
 
 /**
  * App.jsx (updated)
@@ -122,6 +125,9 @@ export default function App() {
 
         {/* vehicle accounts page */}
         <Route path="/vehicles" element={<VehicleAccounts />} />
+        <Route path="/rent-list" element={<RentList />} />
+        <Route path="/credits" element={<CreditList />} />
+        <Route path="/credits/:id" element={<CreditDetail />} />
 
         {/* tasks page */}
         <Route path="/tasks" element={<TaskManager />} />
